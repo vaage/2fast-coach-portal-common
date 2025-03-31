@@ -1,3 +1,5 @@
+import {Coach, Track} from "./SeasonInfo";
+
 export interface SimpleSession {
   active: boolean;
 
@@ -13,21 +15,7 @@ export interface SimpleSession {
 export interface RealtimeSession {
   coachGuid: string;
 
-  coach: {
-    firstName: string;
-
-    lastName: string;
-
-    shortBio: string;
-
-    longBio: string;
-
-    rate: number;
-
-    profileImage: string;
-
-    bannerImage: string;
-  };
+  coach: Coach;
 
   trackDayGuid: string;
 
@@ -36,15 +24,7 @@ export interface RealtimeSession {
 
     trackGuid: string;
 
-    track: {
-      name: string;
-
-      logoImage: string;
-
-      city: string;
-
-      state: string;
-    };
+    track: Track;
   };
 }
 
@@ -54,36 +34,14 @@ export interface RealtimeTrackDay {
 
   trackGuid: string;
 
-  track: {
-    name: string;
-
-    logoImage: string;
-
-    city: string;
-
-    state: string;
-  };
+  track: Track;
 
   sessions: {
     sessionGuid: string;
 
     coachGuid: string;
 
-    coach: {
-      firstName: string;
-
-      lastName: string;
-
-      shortBio: string;
-
-      longBio: string;
-
-      rate: number;
-
-      profileImage: string;
-
-      bannerImage: string;
-    };
+    coach: Coach;
   }[];
 }
 

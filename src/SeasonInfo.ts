@@ -1,4 +1,4 @@
-export interface SeasonInfoTrack {
+export interface Track {
   city: string;
 
   logoImage: string;
@@ -14,7 +14,7 @@ export interface SeasonInfoTrackDay {
   track: string; // Track guid
 }
 
-export interface SeasonInfoCoach {
+export interface Coach {
   bannerImage: string;
 
   email: string;
@@ -33,9 +33,9 @@ export interface SeasonInfoCoach {
 }
 
 export interface SeasonInfo {
-  coaches: { [key: string]: SeasonInfoCoach };
+  coaches: { [key: string]: Coach };
 
-  tracks: { [key: string]: SeasonInfoTrack };
+  tracks: { [key: string]: Track };
 
   trackDays: { [key: string]: SeasonInfoTrackDay };
 }
