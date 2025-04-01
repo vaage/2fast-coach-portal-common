@@ -1,3 +1,5 @@
+import {Coach} from "./Coach";
+
 export interface SimpleSession {
   active: boolean;
 
@@ -13,21 +15,7 @@ export interface SimpleSession {
 export interface RealtimeSession {
   coachGuid: string;
 
-  coach: {
-    firstName: string;
-
-    lastName: string;
-
-    shortBio: string;
-
-    longBio: string;
-
-    rate: number;
-
-    profileImage: string;
-
-    bannerImage: string;
-  };
+  coach: Coach;
 
   trackDayGuid: string;
 
@@ -69,21 +57,7 @@ export interface RealtimeTrackDay {
 
     coachGuid: string;
 
-    coach: {
-      firstName: string;
-
-      lastName: string;
-
-      shortBio: string;
-
-      longBio: string;
-
-      rate: number;
-
-      profileImage: string;
-
-      bannerImage: string;
-    };
+    coach: Coach;
   }[];
 }
 

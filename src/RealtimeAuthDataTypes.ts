@@ -1,18 +1,4 @@
-export interface RealtimeSessionAuthCoach {
-  firstName: string;
-
-  lastName: string;
-
-  shortBio: string;
-
-  longBio: string;
-
-  rate: number;
-
-  profileImage: string;
-
-  bannerImage: string;
-}
+import {Coach} from "./Coach";
 
 export interface RealtimeSessionsAuthCustomer {
   firstName: string;
@@ -61,7 +47,7 @@ export interface RealtimeSessionsAuthSession {
 export interface RealtimeSessionsAuth {
   coachGuid: string;
 
-  coach: RealtimeSessionAuthCoach;
+  coach: Coach;
 
   // Session GUID to session data.
   sessions: {
