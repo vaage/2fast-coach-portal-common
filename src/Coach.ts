@@ -1,5 +1,4 @@
 export interface Coach {
-  guid: string;
 
   bannerImage: string;
 
