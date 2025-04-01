@@ -1,4 +1,5 @@
 import {Coach} from "./Coach";
+import {Track} from "./Track";
 
 export interface RealtimeSessionsAuthCustomer {
   firstName: string;
@@ -14,22 +15,12 @@ export interface RealtimeSessionsAuthCustomer {
   ridingGoal: string;
 }
 
-export interface RealtimeSessionsAuthTrack {
-  name: string;
-
-  logoImage: string;
-
-  city: string;
-
-  state: string;
-}
-
 export interface RealtimeSessionsAuthTrackDay {
   date: string;
 
   trackGuid: string;
 
-  track: RealtimeSessionsAuthTrack;
+  track: Track;
 }
 
 export interface RealtimeSessionsAuthSession {

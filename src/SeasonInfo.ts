@@ -1,14 +1,5 @@
 import {Coach} from "./Coach";
-
-export interface SeasonInfoTrack {
-  city: string;
-
-  logoImage: string;
-
-  name: string;
-
-  state: string;
-}
+import {Track} from "./Track";
 
 export interface SeasonInfoTrackDay {
   date: string;
@@ -19,7 +10,7 @@ export interface SeasonInfoTrackDay {
 export interface SeasonInfo {
   coaches: { [key: string]: Coach };
 
-  tracks: { [key: string]: SeasonInfoTrack };
+  tracks: { [key: string]: Track };
 
   trackDays: { [key: string]: SeasonInfoTrackDay };
 }
