@@ -1,6 +1,8 @@
 import {Coach} from "./Coach";
 import {Track} from "./Track";
 
+import {RealtimeSessionsAuthTrackDay} from "./RealtimeSessionsAuthTrackDay";
+
 export interface SimpleSession {
   active: boolean;
 
@@ -20,13 +22,7 @@ export interface RealtimeSession {
 
   trackDayGuid: string;
 
-  trackDay: {
-    date: string;
-
-    trackGuid: string;
-
-    track: Track;
-  };
+  trackDay: RealtimeSessionsAuthTrackDay
 }
 
 // Flat structure. No nested types.
