@@ -1,5 +1,6 @@
 
 export interface Customer {
+
   firstName: string;
 
   lastName: string;
@@ -12,7 +13,9 @@ export interface Customer {
 
   ridingGoal: string;
 
-  // When a customer books a session, this field will be set. That way, it is
-  // always possible to find the session they booked.
-  session: string;
+  /**
+   * The session the customer booked. If the customer fails to book the session,
+   * they'll appear with no session (null).
+   */
+  session: string | null | undefined;
 }

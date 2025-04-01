@@ -1,19 +1,6 @@
 import {Coach} from "./Coach";
 import {RealtimeSessionsAuthTrackDay} from "./RealtimeSessionsAuthTrackDay";
-
-export interface RealtimeSessionsAuthCustomer {
-  firstName: string;
-
-  lastName: string;
-
-  email: string;
-
-  telephone: string;
-
-  ridingGroup: string;
-
-  ridingGoal: string;
-}
+import {Customer} from "./Customer";
 
 export interface RealtimeSessionsAuthSession {
   trackDayGuid: string;
@@ -24,7 +11,7 @@ export interface RealtimeSessionsAuthSession {
   customerGuid: string | null;
 
   // Non-null when a customer has booked this session.
-  customer: RealtimeSessionsAuthCustomer | null;
+  customer: Customer | null;
 }
 
 export interface RealtimeSessionsAuth {
