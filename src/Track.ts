@@ -1,11 +1,10 @@
 export interface Track {
-  guid: string;
 
-  city: string;
+  name: string;
 
   logoImage: string;
 
-  name: string;
+  city: string;
 
   state: string;
 }

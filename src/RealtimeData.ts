@@ -1,4 +1,5 @@
 import {Coach} from "./Coach";
+import {Track} from "./Track";
 
 export interface SimpleSession {
   active: boolean;
@@ -24,15 +25,7 @@ export interface RealtimeSession {
 
     trackGuid: string;
 
-    track: {
-      name: string;
-
-      logoImage: string;
-
-      city: string;
-
-      state: string;
-    };
+    track: Track;
   };
 }
 
@@ -42,15 +35,7 @@ export interface RealtimeTrackDay {
 
   trackGuid: string;
 
-  track: {
-    name: string;
-
-    logoImage: string;
-
-    city: string;
-
-    state: string;
-  };
+  track: Track;
 
   sessions: {
     sessionGuid: string;
