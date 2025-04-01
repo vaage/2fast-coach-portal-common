@@ -11,7 +11,7 @@ export interface Coach {
 
   profileImage: string;
 
-  rate: Number;
+  rate: number;
 
   shortBio: string;
 }
