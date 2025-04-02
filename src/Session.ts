@@ -1,22 +1,29 @@
+import {SparseSession} from "./SparseSession";
+import {Coach} from "./Coach";
+import {SparseTrackDay} from "./SparseTrackDay";
+import {Track} from "./Track";
 import {Customer} from "./Customer";
 
-export interface Session {
+export interface Session extends SparseSession {
 
-  guid: string;
+  /**
+   * The coach implementation. The coach guid is in the base interface.
+   */
+  coachImpl: Coach;
 
-  // The coach's guid. The coach definition is not included here because it can
-  // be found in the static data file.
-  coach: string;
+  /**
+   * The sparse track day information, however the sparse values can be resolved
+   * within the context of this object.
+   */
+  trackDayImpl: SparseTrackDay;
 
-  // The track day's. The track definition is not included here because it can
-  // be found in the static data file.
-  trackDay: string;
+  /**
+   * Full track information. The track guid can be found in the track day impl.
+   */
+  trackImpl: Track;
 
-  // When null, the sessions has not been booked. Website users should never
-  // see a session with a customer.
-  customer: Customer | null;
-
-  // If the session is not active, it means the coach offered it once before but
-  // decided to no longer offer it.
-  active: boolean;
+  /**
+   * Full customer information.
+   */
+  customerImpl: Customer | null;
 }
