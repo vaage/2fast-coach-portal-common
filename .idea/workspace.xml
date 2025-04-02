@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c36c5cf4-35f8-435a-9e96-da67b25ca6c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SparseTrackDay.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RealtimeAuthDataTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealtimeAuthDataTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeasonInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeasonInfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TrackDay.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrackDay.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Rebasing ",
+    "git-widget-placeholder": "92bde9bf",
     "last_opened_file_path": "/Users/vaage/Documents/2fast-coach-portal-common",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -74,11 +75,11 @@
       <recent name="$PROJECT_DIR$/client-lit/src/external" />
     </key>
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/src/SparseTrackDay.ts" />
       <recent name="$PROJECT_DIR$/src/Customer.ts" />
       <recent name="$PROJECT_DIR$/src/Session.ts" />
       <recent name="$PROJECT_DIR$/src/BookingRequest.ts" />
       <recent name="$PROJECT_DIR$/src/TrackDay.ts" />
-      <recent name="$PROJECT_DIR$/src/Track.ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />

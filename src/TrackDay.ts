@@ -1,11 +1,12 @@
-import {Track} from "./Track";
+import {SparseTrackDay} from "./SparseTrackDay";
 
-export interface TrackDay {
+/**
+ * Augments the track day with a self-referencing guid.
+ */
+export interface TrackDay extends SparseTrackDay{
+  /**
+   * The guid of the track day. If this guid was used with the season info, it
+   * will find this object's date and track.
+   */
   guid: string;
-
-  date: string;
-
-  // Guid to the track. If the caller needs track info, they should use the
-  // static file.
-  track: string;
 }

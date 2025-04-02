@@ -1,16 +1,11 @@
 import {Coach} from "./Coach";
 import {Track} from "./Track";
-
-export interface SeasonInfoTrackDay {
-  date: string;
-
-  track: string; // Track guid
-}
+import {SparseTrackDay} from "./SparseTrackDay";
 
 export interface SeasonInfo {
   coaches: { [key: string]: Coach };
 
   tracks: { [key: string]: Track };
 
-  trackDays: { [key: string]: SeasonInfoTrackDay };
+  trackDays: { [key: string]: SparseTrackDay };
 }
