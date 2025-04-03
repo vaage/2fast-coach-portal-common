@@ -9,10 +9,8 @@ export interface CoachSessions {
   coach: string;
 
   /**
-   * Session GUID to a sparse session. A full session definition is not needed
-   * because the remaining data can be found in static data.
+   * A full session definition is not needed because the remaining data can be
+   * found in static data.
    */
-  sessions: {
-    [key: string]: SparseSession;
-  };
+  sessions: SparseSession[];
 }
